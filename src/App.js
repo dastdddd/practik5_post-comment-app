@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ImageLike from './components/images-like';
+import AddComent from './components/add-coment';
+import List from './components/list';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className="img-like">
+        <ImageLike/>
+      </div>
+      <div className="com-lis">
+        <AddComent/>
+        <List/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
